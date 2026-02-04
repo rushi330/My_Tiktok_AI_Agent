@@ -12,7 +12,7 @@ def validate_music_id(music_id):
 
 def submit_ad(payload, access_token):
 
-    print("📡 Submitting ad to TikTok (mock)...")
+    print(" Submitting ad to TikTok (mock)...")
 
     outcomes = [
         None,
