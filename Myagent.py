@@ -12,7 +12,7 @@ def run_conversation():
     payload["creative"]["text"] = input("Ad Text (max 100 chars): ").strip()
     payload["creative"]["cta"] = input("CTA: ").strip()
 
-    print("\n🎵 Music Options")
+    print("\n Music Options")
     print("1. Existing Music ID")
     print("2. Upload Custom Music")
     print("3. No Music")
@@ -24,7 +24,7 @@ def run_conversation():
         if validate_music_id(music_id):
             payload["creative"]["music_id"] = music_id
         else:
-            print("❌ Invalid Music ID")
+            print(" Invalid Music ID")
             payload["creative"]["music_id"] = None
 
     elif choice == "2":
