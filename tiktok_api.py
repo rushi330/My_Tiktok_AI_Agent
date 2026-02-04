@@ -24,7 +24,7 @@ def submit_ad(payload, access_token):
     result = random.choice(outcomes)
 
     if result is None:
-        print("✅ Ad created successfully")
+        print(" Ad created successfully")
         return {"success": True, "ad_id": "mock_ad_001"}
 
     if result == "INVALID_TOKEN":
