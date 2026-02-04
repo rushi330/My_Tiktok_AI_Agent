@@ -12,10 +12,10 @@ def authenticate():
 
     token = load_token()
     if token:
-        print("🔐 Using stored access token")
+        print(" Using stored access token")
         return token["access_token"]
 
-    print("🔐 Simulating TikTok OAuth flow...")
+    print(" Simulating TikTok OAuth flow...")
 
     token_data = {
         "access_token": "mock_access_token_123",
@@ -24,6 +24,6 @@ def authenticate():
     }
 
     save_token(token_data)
-    print("✅ Mock OAuth successful")
+    print(" Mock OAuth successful")
 
     return token_data["access_token"]
